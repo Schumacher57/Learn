@@ -18,24 +18,20 @@
                 <MenuItem Header="О программе" />
             </MenuItem>
         </Menu>
-        <StatusBar DockPanel.Dock="Bottom"></StatusBar>
-        <TabControl>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem MinWidth="150">
+                <TextBlock Text="{Binding Status}" />
+
+            </StatusBarItem>
+        </StatusBar>
+        <TabControl Height="399" VerticalAlignment="Bottom">
             <TabItem Header="Вкладка 1">
                 <Grid >
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="265*"/>
-                        <RowDefinition Height="27*"/>
-                        <RowDefinition Height="75*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="6*"/>
-                        <ColumnDefinition Width="17*"/>
-                    </Grid.ColumnDefinitions>
-
                 </Grid>
             </TabItem>
             <TabItem Header="Вкладка 2"></TabItem>
         </TabControl>
+
     </DockPanel>
 
 </Window>
